@@ -1,0 +1,146 @@
+/* TechMais - estilos complementares ao Bootstrap */
+:root {
+    --techmais-bg: #080d16;
+    --techmais-surface: #111b2b;
+    --techmais-surface-2: #17263b;
+    --techmais-blue: #168bff;
+    --techmais-blue-hover: #0874df;
+    --techmais-text: #f5f8ff;
+    --techmais-muted: #b7c5d8;
+}
+
+body.techmais-body {
+    min-height: 100vh;
+    background: var(--techmais-bg) !important;
+    color: var(--techmais-text) !important;
+}
+
+.techmais-navbar {
+    background: #0b1422;
+    border-bottom: 1px solid rgba(75, 157, 255, .25);
+    box-shadow: 0 4px 18px rgba(0, 0, 0, .22);
+}
+
+.techmais-navbar .navbar-brand {
+    color: #fff;
+    letter-spacing: .3px;
+}
+
+.techmais-nav-link {
+    color: #dce9fb !important;
+    border-radius: .5rem;
+    padding: .55rem .8rem !important;
+    transition: background-color .18s ease, color .18s ease;
+}
+
+.techmais-nav-link:hover,
+.techmais-nav-link:focus {
+    color: #fff !important;
+    background: rgba(22, 139, 255, .18);
+}
+
+.pagina-estilizada {
+    max-width: 1140px;
+}
+
+.techmais-card {
+    color: var(--techmais-text);
+    background: var(--techmais-surface);
+    border: 1px solid rgba(99, 163, 255, .16) !important;
+    border-radius: 1rem;
+}
+
+.techmais-title {
+    color: #fff;
+    padding-bottom: .75rem;
+    border-bottom: 2px solid rgba(22, 139, 255, .7);
+}
+
+.techmais-subtitle {
+    color: #83c2ff;
+}
+
+.techmais-body .text-light-emphasis {
+    color: var(--techmais-muted) !important;
+}
+
+.techmais-control {
+    color: #f5f8ff;
+    background-color: #0b1422;
+    border-color: #344963;
+}
+
+.techmais-control:focus {
+    color: #fff;
+    background-color: #0b1422;
+    border-color: var(--techmais-blue);
+    box-shadow: 0 0 0 .2rem rgba(22, 139, 255, .2);
+}
+
+.techmais-control::placeholder {
+    color: #8fa4bf;
+}
+
+.techmais-control option {
+    color: #f5f8ff;
+    background: #111b2b;
+}
+
+.techmais-button,
+.btn-primary {
+    --bs-btn-bg: var(--techmais-blue);
+    --bs-btn-border-color: var(--techmais-blue);
+    --bs-btn-hover-bg: var(--techmais-blue-hover);
+    --bs-btn-hover-border-color: var(--techmais-blue-hover);
+    --bs-btn-active-bg: #0867c6;
+    --bs-btn-active-border-color: #0867c6;
+    --bs-btn-color: #fff;
+    --bs-btn-hover-color: #fff;
+    border-radius: .55rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.techmais-table {
+    --bs-table-bg: #111b2b;
+    --bs-table-color: #edf4ff;
+    --bs-table-striped-bg: #17263b;
+    --bs-table-striped-color: #fff;
+    --bs-table-hover-bg: #1c3451;
+    --bs-table-hover-color: #fff;
+    border-color: #2a3d55;
+}
+
+.techmais-table thead th {
+    color: #8ec8ff;
+    background: #0b1422;
+    white-space: nowrap;
+    border-bottom-color: #36516f;
+}
+
+.techmais-table td,
+.techmais-table th {
+    padding: .9rem 1rem;
+}
+
+.techmais-back-link {
+    color: #b8dfff;
+}
+
+.login-pagina {
+    max-width: 560px;
+    padding-top: 5rem !important;
+}
+
+.login-pagina .techmais-card {
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, .28);
+}
+
+@media (max-width: 576px) {
+    .techmais-navbar .container {
+        justify-content: flex-start !important;
+    }
+    .techmais-nav-link {
+        padding: .45rem .6rem !important;
+    }
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - TechMais</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet" />
+</head>
+
+<body class="bg-dark text-light techmais-body">
+    <div class="pagina login-pagina container py-4 py-md-5 pagina-estilizada">
+        <div class="card techmais-card shadow-lg border-0">
+            <div class="card-body p-3 p-md-4 p-lg-5">
+                <h1 class="text-center display-6 fw-bold mb-4 techmais-title">Login</h1>
+                <form action="/login" class="techmais-form" method="get">
+                    <label class="form-label mt-2 mb-1">E-mail:</label><input class="form-control mb-3 techmais-control"
+                        name="email" placeholder="Digite seu e-mail" type="email" />
+                    <label class="form-label mt-2 mb-1">Senha:</label><input class="form-control mb-3 techmais-control"
+                        name="senha" placeholder="Digite sua senha" type="password" />
+                    <button class="botao-azul btn btn-primary techmais-button me-2 mb-2" type="submit">Entrar</button>
+                </form>
+                <p class="text-light-emphasis"><a class="techmais-back-link" href="/">Voltar ao início</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
