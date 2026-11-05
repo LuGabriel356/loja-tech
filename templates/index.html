@@ -1,0 +1,22 @@
+{% extends 'layout/base_menu.html' %}
+
+{% block titulo %} Início {% endblock %}
+
+{% block conteudo %}
+
+<main class="pagina container py-4 py-md-5 pagina-estilizada">
+    <article class="card techmais-card shadow-lg border-0">
+        <div class="card-body p-3 p-md-4 p-lg-5">
+            <h1 class="display-6 fw-bold mb-4 techmais-title">TechMais</h1>
+            <h2 class="h4 mb-3 techmais-subtitle">Loja de Peças de Informática e Tecnologia</h2>
+            <p class="text-light-emphasis">Bem-vindo ao sistema visual da TechMais.</p>
+            <p class="text-light-emphasis">Escolha uma página pelo menu acima ou pelos links abaixo.</p>
+            <p class="text-light-emphasis"><a class="botao-azul btn btn-primary techmais-button me-2 mb-2"
+                    href="{{ url_for('listar_usuarios') }}">Listar usuários</a></p>
+            <p class="text-light-emphasis"><a class="botao-azul btn btn-primary techmais-button me-2 mb-2"
+                    href="{{ url_for('listar_pecas') }}">Listar peças</a></p>
+        </div>
+    </article>
+</main>
+
+{% endblock %}

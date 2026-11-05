@@ -1,0 +1,81 @@
+{% extends 'layout/base_menu.html' %}
+
+{% block titulo %} Cadastrar Usuários {% endblock %}
+
+{% block conteudo %}
+
+<main>
+        <section class="pagina container py-4 py-md-5 pagina-estilizada">
+                <article class="card techmais-card shadow-lg border-0">
+                        <div class="card-body p-3 p-md-4 p-lg-5">
+                                <h1 class="display-6 fw-bold mb-4 techmais-title">Cadastro de Usuários</h1>
+                                <form action="{{ url_for('inserir_usuario') }}" class="techmais-form" method="get">
+                                        <div class="row g-3 mb-3">
+                                                <div class="col-md-6 mb-1"><label
+                                                                class="form-label mt-2 mb-1">Nome:</label><input
+                                                                class="form-control mb-3 techmais-control"
+                                                                name="nome" /></div>
+                                                <div class="col-md-6 mb-1"><label
+                                                                class="form-label mt-2 mb-1">E-mail:</label><input
+                                                                class="form-control mb-3 techmais-control" name="email"
+                                                                type="email" /></div>
+                                                <div class="col-md-3 mb-1"><label
+                                                                class="form-label mt-2 mb-1">Celular:</label><input
+                                                                class="form-control mb-3 techmais-control"
+                                                                name="celular" /></div>
+                                                <div class="col-md-3 mb-1"><label class="form-label mt-2 mb-1">Data de
+                                                                Nascimento:</label><input
+                                                                class="form-control mb-3 techmais-control"
+                                                                name="nascimento" type="date" /></div>
+                                                <div class="col-md-3 mb-1"><label
+                                                                class="form-label mt-2 mb-1">CPF:</label><input
+                                                                class="form-control mb-3 techmais-control" name="cpf" />
+                                                </div>
+                                                <div class="col-md-3 mb-1"><label class="form-label mt-2 mb-1">Nível de
+                                                                Acesso:</label><select
+                                                                class="form-select mb-3 techmais-control" name="nivel">
+                                                                <option>-- ESCOLHA --</option>
+                                                                <option>Usuário</option>
+                                                                <option>Administrador</option>
+                                                        </select></div>
+                                                <div class="col-md-3 mb-1"><label
+                                                                class="form-label mt-2 mb-1">CEP:</label><input
+                                                                class="form-control mb-3 techmais-control" name="cep" />
+                                                </div>
+                                                <div class="col-md-6 mb-1"><label
+                                                                class="form-label mt-2 mb-1">Endereço:</label><input
+                                                                class="form-control mb-3 techmais-control"
+                                                                name="endereco" /></div>
+                                                <div class="col-md-3 mb-1"><label
+                                                                class="form-label mt-2 mb-1">Número:</label><input
+                                                                class="form-control mb-3 techmais-control"
+                                                                name="numero" /></div>
+                                                <div class="col-md-4 mb-1"><label
+                                                                class="form-label mt-2 mb-1">Complemento:</label><input
+                                                                class="form-control mb-3 techmais-control"
+                                                                name="complemento" /></div>
+                                                <div class="col-md-4 mb-1"><label
+                                                                class="form-label mt-2 mb-1">Cidade:</label><input
+                                                                class="form-control mb-3 techmais-control"
+                                                                name="cidade" /></div>
+                                                <div class="col-md-4 mb-1"><label
+                                                                class="form-label mt-2 mb-1">Estado:</label><select
+                                                                class="form-select mb-3 techmais-control" name="estado">
+                                                                <option>-- ESCOLHA --</option>
+                                                                <option>SP</option>
+                                                                <option>RJ</option>
+                                                                <option>MG</option>
+                                                                <option>PR</option>
+                                                        </select></div>
+                                        </div>
+                                        <button class="botao-azul btn btn-primary techmais-button me-2 mb-2"
+                                                type="submit">Salvar</button>
+                                        <a class="botao-azul btn btn-primary techmais-button me-2 mb-2 techmais-back-link"
+                                                href="{{ url_for('listar_usuarios') }}">Voltar</a>
+                                </form>
+                        </div>
+                </article>
+        </section>
+</main>
+
+{% endblock %}
